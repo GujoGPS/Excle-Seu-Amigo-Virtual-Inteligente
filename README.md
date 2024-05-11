@@ -5,7 +5,7 @@
 ![3](https://github.com/GujoGPS/Excle-Seu-Amigo-Virtual-Inteligente/assets/155565590/d106f40c-4ef2-478a-8358-929ab4f32a1c)
 ![4](https://github.com/GujoGPS/Excle-Seu-Amigo-Virtual-Inteligente/assets/155565590/4b8ff71e-622e-44d7-a7c8-cef841b440a5)
 ![5](https://github.com/GujoGPS/Excle-Seu-Amigo-Virtual-Inteligente/assets/155565590/ae874580-310c-48cf-b9d3-1cac614518d3)
-# Construindo Excel
+# Construindo Excle
      1. Clone a fonte
      2. Adicione sua própria chave de API do Google ao arquivo `excle.js`
      3. Execute `npm i` para instalar as dependências necessárias
