@@ -6,8 +6,10 @@
 ![4](https://github.com/GujoGPS/Excle-Seu-Amigo-Virtual-Inteligente/assets/155565590/4b8ff71e-622e-44d7-a7c8-cef841b440a5)
 ![5](https://github.com/GujoGPS/Excle-Seu-Amigo-Virtual-Inteligente/assets/155565590/ae874580-310c-48cf-b9d3-1cac614518d3)
 # Construindo Excle
-     1. Clone a fonte
-     2. Adicione sua própria chave de API do Google ao arquivo `excle.js`
-     3. Execute `npm i` para instalar as dependências necessárias
-     4. Execute diretamente com `npx electron .` ou compile o projeto com algo como `elecontron-packager`
-     5. `electron-packager <ProjectLocation> Excle --platform=win32 --arch=x64`
+
+1. Clone a fonte: Faça um clone do repositório para obter o código-fonte do Excle.
+2. Chave de API: Adicione sua própria chave de API do Google AI ao arquivo `excle.js`.
+3. Instale Dependências: Execute `npm i` para instalar todas as dependências necessárias para o projeto.
+4. Execução Direta: Para iniciar o Excle, execute `npx electron .` no terminal.
+5. Compilação do Projeto: Se desejar compilar o projeto, use o comando `electron-packager`.
+6. Comando de Compilação: Utilize `electron-packager <ProjectLocation> Excle --platform=win32 --arch=x64` para criar uma versão para Windows.
