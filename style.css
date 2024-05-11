@@ -1,0 +1,161 @@
+body {
+  background: linear-gradient(to bottom right, #191919, #2B2B2B);
+  color: #EEEEEE;
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title {
+  background-color: #191919;
+  color: white;
+  padding: 10px 20px;
+  text-align: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+}
+
+.chat-area {
+  flex: 1; 
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.message.ai {
+  justify-content: flex-start; /* Alinha à esquerda */
+}
+
+.message.user {
+  justify-content: flex-end; /* Alinha à direita */
+}
+
+.message-text {
+  background-color: #363636;
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+  color: #DCDCDC;
+  position: relative; /* Permite posicionar o sinal de certo */
+}
+
+.message.ai .message-text {
+  margin-right: 10px; /* Espaçamento entre o balão e o ícone */
+}
+
+.message.user .message-text {
+  margin-left: 10px;
+}
+
+.message.ai .message-text::after {
+  content: '✓'; /* Adiciona o sinal de certo */
+  position: absolute;
+  bottom: 5px; /* Ajusta a posição vertical */
+  right: 10px; /* Ajusta a posição horizontal */
+}
+
+.icon {
+  font-size: 18px;
+  align-self: flex-end;
+}
+
+.input-area {
+  position: fixed; /* Change this to fixed to position the input area relative to the viewport */
+  bottom: 0; /* Position the input area at the bottom of the viewport */
+  left: 225px; /* Position the input area to the right of the recent chats div */
+  width: calc(100% - 225px); /* Adjust the width to take up the remaining space */
+  padding: 15px;
+}
+
+.user-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px dashed #555; 
+  background-color: #222; 
+  outline: none; 
+  font-size: 16px;
+  color: #DCDCDC;
+}
+
+.user-input::placeholder {
+  color: #888;
+}
+
+.container {
+  position: relative; /* Add this to establish a new positioning context */
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.recent-chats {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex; /* Add this to enable Flexbox */
+  flex-direction: column; /* Stack the items vertically */
+  align-items: center; /* Center the items horizontally */
+}
+
+.chat-area {
+  flex: 1; 
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.recent-chat-box {
+  position: relative;
+  background-color: #000;
+  opacity: 0.15;
+  padding: 10px 15px;
+  height: 3vh; /* Adjust this to change the height of the recent chat boxes */
+  border-radius: 8px;
+  width: 70%; /* Adjust this to change the width of the recent chat boxes */
+  word-wrap: break-word;
+  color: #DCDCDC;
+  margin-bottom: 10px; /* Add some margin to separate the chat boxes */
+  display: flex; /* Add this to enable Flexbox */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.recent-chat-box-active {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.48);
+}
+
+.recent-chat-box p {
+  margin: 0;
+  white-space: nowrap; /* Prevent the text from wrapping onto the next line */
+  overflow: hidden; /* Hide the text that overflows the element */
+  text-overflow: ellipsis; /* Show an ellipsis when the text overflows */
+  max-width: 75%; /* Set a maximum width for the text */
+  user-select: none; /* Prevent the text from being selected */
+}
+
+.recent-chat-box:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
